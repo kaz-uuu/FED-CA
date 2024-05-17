@@ -11,14 +11,31 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="style.css">
-        <link href='https://fonts.googleapis.com/css?family=DM Sans' rel='stylesheet'>
-
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+        <script type="importmap">
+            {
+              "imports": {
+                "three": "https://cdn.jsdelivr.net/npm/three@0.164.1/build/three.module.js",
+                "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.164.1/examples/jsm/"
+              }
+            }
+          </script>          
     </head>
     <body>
+                
+        
         <div class="grid-container">
-            <div class="grid-item" id="top-padding"></div>
+            <div class="grid-item" id="top-padding">
+                <nav>
+                    <a>Home</a>
+                    <a>About Me</a>
+                    <a>Home</a>
+                </nav>
+            </div>
             <div class="grid-item">
-                <section class="hero-text">
+                <section class="hero-section">
                     <h1>Protecting & Restoring our Marine Ecosystems</h1>
                     <h2>UN SGD 14.2</h2>
                     <span class="top-left-corner"></span>
@@ -27,40 +44,8 @@
                     <span class="bottom-right-corner"></span>
                 </section>
             </div>
-            <div class="grid-item hero-animal">
-                <div class="shard-container">
-                    <div class="shard" id="shard-1"></div>
-                    <div class="shard" id="shard-2"></div>
-                    <div class="shard" id="shard-3"></div>
-                    <div class="shard" id="shard-4"></div>
-                    <div class="shard" id="shard-5"></div>
-                    <div class="shard" id="shard-6"></div>
-                    <div class="shard" id="shard-7"></div>
-                    <div class="shard" id="shard-8"></div>
-                    <div class="shard" id="shard-9"></div>
-                    <div class="shard" id="shard-10"></div>
-                    <div class="shard" id="shard-11"></div>
-                    <div class="shard" id="shard-12"></div>
-                    <div class="shard" id="shard-13"></div>
-                    <div class="shard" id="shard-14"></div>
-                    <div class="shard" id="shard-15"></div>
-                    <div class="shard" id="shard-16"></div>
-                    <div class="shard" id="shard-17"></div>
-                    <div class="shard" id="shard-18"></div>
-                    <div class="shard" id="shard-19"></div>
-                    <div class="shard" id="shard-20"></div>
-                    <div class="shard" id="shard-21"></div>
-                    <div class="shard" id="shard-21"></div>
-                    <div class="shard" id="shard-22"></div>
-                    <div class="shard" id="shard-23"></div>
-                    <div class="shard" id="shard-24"></div>
-                    <div class="shard" id="shard-25"></div>
-                    <div class="shard" id="shard-26"></div>
-                    <div class="shard" id="shard-27"></div>
-                    <div class="shard" id="shard-28"></div>
-                    <div class="shard" id="shard-29"></div>
-                    <div class="shard" id="shard-30"></div>
-                </div>
+            <div id="coral-container" class="grid-item coral-scene">
+                <canvas id="glCanvas" width="500px"></canvas>
                 <span class="top-left-corner"></span>
                 <span class="top-right-corner"></span>
                 <span class="bottom-left-corner"></span>
@@ -68,29 +53,29 @@
             </div>
         </div>
 
-        <div class="grid-container">
+        <div class="grid-container facts-section">
             <div class="grid-item stat">
-                <h3>Earth has over</h3>
+                <h4>Earth has over</h4>
                 <h1>243,613</h1>
-                <h3>known marine species as of 2023</h3>
+                <h4>known marine species as of 2023</h4>
                 <span class="top-left-corner"></span>
                 <span class="top-right-corner"></span>
                 <span class="bottom-left-corner"></span>
                 <span class="bottom-right-corner"></span>
             </div>
             <div class="grid-item stat">
-                <h3>Around</h3>
+                <h4>Around</h4>
                 <h1>20%</h1>
-                <h3>of the world's coral reefs have been destroyed</h3>
+                <h4>of the world's coral reefs have been destroyed</h4>
                 <span class="top-left-corner"></span>
                 <span class="top-right-corner"></span>
                 <span class="bottom-left-corner"></span>
                 <span class="bottom-right-corner"></span>
             </div>
             <div class="grid-item stat">
-                <h3>Only</h3>
+                <h4>Only</h4>
                 <h1>7.65%</h1>
-                <h3>of the world's oceans are covered by marine protected areas (MPAs)</h3>
+                <h4>of the world's oceans are covered by marine protected areas (MPAs)</h4>
                 <span class="top-left-corner"></span>
                 <span class="top-right-corner"></span>
                 <span class="bottom-left-corner"></span>
@@ -113,13 +98,12 @@
                 <span class="top-right-corner"></span>
                 <span class="bottom-left-corner"></span>
                 <span class="bottom-right-corner"></span>
-            </div>
+            </div> 
             <div class="grid-item"></div>
         </div>
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-        
-        <script src="" async defer></script>
+        <script src="coralscene.js" type="module"></script>
     </body>
 </html>
