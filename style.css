@@ -11,58 +11,6 @@ body {
     overflow-x: hidden;
 }
 
-@font-face {
-  font-family: 'IBMPlexMono-Regular';
-  src: url('IBMPlexMono-Regular.ttf');
-}
-
-@keyframes move-bg {
-  to {
-    background-position: 400% 0;
-  }
-}
-
-h1 {
-  font-size: 3em;
-  color: #5755FE;
-  margin: 0;
-  font-weight: 600;
-  letter-spacing: 0.05em;
-  background: linear-gradient(
-    -45deg,
-    #5755FE,
-    #c46bee,
-    #5755FE
-  ) 0 0 / 400% 100%;
-  color: transparent;
-  -webkit-background-clip: text;
-  background-clip: text;
-  animation: move-bg 15s infinite linear;
-}
-
-h2 {
-  font-size: 2.25em;
-  color: #5755FE;
-}
-
-h3 {
-  font-size: 1.76em;
-  color: #5755FE;
-}
-
-h4 {
-  font-size: 1.5em;
-  color: #5755FE;
-}
-
-h5 {
-  font-size: 1.25em;
-}
-
-p {
-  color: #727696;
-  text-align: justify;
-}
 
 
 
@@ -103,6 +51,8 @@ nav a {
   font-size: 0.8em;
   cursor: pointer;
   transition: color 0.4s ease-in-out;
+  text-decoration: none;
+  color: black;
 }
 
 nav a:hover {
