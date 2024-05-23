@@ -11,61 +11,13 @@ body {
     overflow-x: hidden;
 }
 
-
-
-
-/* NavBar */
-
-.navwrapper {
-  position: fixed !important;
-  z-index: 2;
-  width: 100%;
+@font-face {
+  font-family: 'IBMPlexMono-Regular';
+  src: url('IBMPlexMono-Regular.ttf');
 }
 
-.navbar {
-  height: 20px;
-  padding-top: 8px;
-  padding-bottom: 12px;
-  grid-column: span 3;
-  max-width: 1376px;
-  width: 100%;
-  margin: auto;
-  margin-top: 13px;
-  border: #D9D9D9 1px solid;
-  border-radius: 5px;
-  background: rgba( 240, 249, 255, 0.35 );
-  backdrop-filter: blur( 4px );
-  -webkit-backdrop-filter: blur( 4px );
-}
-
-nav {
-  margin: auto;
-  width: fit-content;
-  float: center;
-}
-
-nav a {
-  font-family: "IBMPlexMono-Regular";
-  padding-left: 10px;
-  padding-right: 10px;
-  font-size: 0.8em;
-  cursor: pointer;
-  transition: color 0.4s ease-in-out;
-  text-decoration: none;
-  color: black;
-}
-
-nav a:hover {
-  color: #2733df;
-}
 
 /* Hero Section */
-
-#top-padding {
-    height: 2vh;
-    grid-column: span 3;
-}
-
 
 .hero-text h2 {
   color: #2733df;
@@ -89,13 +41,11 @@ nav a:hover {
   }
 }
 
-
+#coral-container {
+  padding: 0px;
+}
 
 /* Hero Section */
-
-.hero-section {
-  min-width: 400px;
-}
 
 #glCanvas {
   position: relative;
@@ -109,13 +59,37 @@ nav a:hover {
   font-weight: 400;
 }
 
-  /* Statistics Styling */
+/* Statistics Styling */
 
-  .stat {
-    text-align: center;
-  }
+.stat {
+  text-align: center;
+}
 
-  /* section title styling */
-  .section-title h2 {
-    text-align: center;
-  }
+/* section title styling */
+.section-title h2 {
+  text-align: center;
+}
+
+
+/* Marine Ecosystem Threats Section */
+
+.threats-section h4 {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.threats-section .category {
+  font-family: 'IBMPlexMono-Regular';
+  margin-top: 6px;
+  border: #686EBF solid 1px;
+  border-radius: 2px;
+  color: #686EBF;
+  width: fit-content;
+  padding: 0 2px 0 2px;
+  font-size: 0.8em;
+
+}
+
+.threats-section p {
+  margin-bottom: 0;
+}

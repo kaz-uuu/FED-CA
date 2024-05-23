@@ -3,6 +3,9 @@
     src: url('IBMPlexMono-Regular.ttf');
   }
   
+
+  /* TEXT STYLING  */
+  
   @keyframes move-bg {
     to {
       background-position: 400% 0;
@@ -53,6 +56,11 @@
   
 
   /* NavBar */
+
+#top-padding {
+    height: 2vh;
+    grid-column: span 3;
+}
 
 .navwrapper {
   position: fixed !important;

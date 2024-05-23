@@ -26,6 +26,7 @@
           </script>         
     </head>
     <body>
+
         <div class="navwrapper">
 
             <div class="navbar">
@@ -36,19 +37,17 @@
                 </nav>
             </div>
         </div>
-        <div class="smooth-scroll-wrapper">
+
+        <section class="hero-section">
             <div class="grid-container">
-                <div class="grid-item" id="top-padding">
-                </div>
+                <div class="grid-item" id="top-padding"></div>
                 <div class="grid-item">
-                    <section class="hero-section">
                         <h1>Protecting & Restoring our Marine Ecosystems</h1>
                         <h2>UN SGD 14.2</h2>
                         <span class="top-left-corner"></span>
                         <span class="top-right-corner"></span>
                         <span class="bottom-left-corner"></span>
                         <span class="bottom-right-corner"></span>
-                    </section>
                 </div>
                 <div id="coral-container" class="grid-item coral-scene">
                     <canvas id="glCanvas" width="500px"></canvas>
@@ -57,8 +56,10 @@
                     <span class="bottom-left-corner"></span>
                 </div>
             </div>
+        </section>
 
-            <div class="grid-container facts-section">
+        <section class="facts-section">
+            <div class="grid-container">
                 <div class="grid-item stat">
                     <h4>Earth has over</h4>
                     <h1>243,613</h1>
@@ -86,18 +87,19 @@
                     <span class="bottom-left-corner"></span>
                     <span class="bottom-right-corner"></span>
                 </div>
-                
             </div>
-            
+        </section>
+
+        <section class="threats-section">
             <div class="grid-container">
                 <div class="grid-item section-title">
                     <h2>Marine Ecosystem Threats</h2>
                 </div>
             </div>
-            
             <div class="grid-container column-2">
                 <div class="grid-item">
                     <h4>Overfishing and Destructive Fishing Practices</h4>
+                    <p class="category">HUMAN BEHAVIOR</p>
                     <p>Overfishing and destructive fishing practices lead to the depletion of fish stocks, disrupts marine food webs, degrades marine habitats and contributes to the loss of biodiversity and ecosystem resilience. Examples of destructive fishing practices include using explosives to kill/stun fish, which can severe damage to natural habitats such as coral reefs.</p>
                     <span class="top-left-corner"></span>
                     <span class="top-right-corner"></span>
@@ -105,8 +107,9 @@
                     <span class="bottom-right-corner"></span>
                 </div> 
                 <div class="grid-item">
-                    <h4>Overfishing and Destructive Fishing Practices</h4>
-                    <p>Overfishing and destructive fishing practices lead to the depletion of fish stocks, disrupts marine food webs, degrades marine habitats and contributes to the loss of biodiversity and ecosystem resilience. Examples of destructive fishing practices include using explosives to kill/stun fish, which can severe damage to natural habitats such as coral reefs.</p>
+                    <h4>Ocean Acidification</h4>
+                    <p class="category">CLIMATE CHANGE</p>
+                    <p>Acidification is caused by increased leavels of carbon dioxide in the atmosphere. As oceans absorb greater levels of CO2, the water's pH levels decrease.</p>
                     <span class="top-left-corner"></span>
                     <span class="top-right-corner"></span>
                     <span class="bottom-left-corner"></span>
@@ -129,13 +132,13 @@
                     <span class="bottom-right-corner"></span>
                 </div> 
             </div>
+        </section>
             
             <!--[if lt IE 7]>
                 <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
-            <![endif]-->
-        </div>
-        <script src="coral-scene.js" type="module"></script>
-        <!-- <script src="smooth-scroll.js"></script> -->
-        <script src="scramble.js"></script>
-    </body>
-</html>
+                <![endif]-->
+            <script src="coral-scene.js" type="module"></script>
+            <!-- <script src="smooth-scroll.js"></script> -->
+            <script src="scramble.js"></script>
+        </body>
+        </html>
