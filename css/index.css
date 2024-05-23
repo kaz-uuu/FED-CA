@@ -1,0 +1,96 @@
+html {
+  width: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: "DM Sans", sans-serif;
+   /* background-image: url('bluefedbackground.jpg'); */
+    background-size: cover;
+    width: 100%;
+    overflow-x: hidden;
+    background-color: #F2FAFF;
+}
+
+@font-face {
+  font-family: 'IBMPlexMono-Regular';
+  src: url('../fonts/IBMPlexMono-Regular.ttf');
+}
+
+
+/* Hero Section */
+
+.hero-text h2 {
+  color: #2733df;
+
+}
+
+.coral-scene {
+  padding: 0px;
+  height: 600px;
+}
+
+@media only screen and (max-width: 600px) {
+  .coral-scene {
+    width: 0px;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .coral-scene {
+    grid-column: span 2;
+  }
+}
+
+#coral-container {
+  padding: 0px;
+}
+
+/* Hero Section */
+
+#glCanvas {
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+
+/* Facts Section */
+.facts-section h4 {
+  color: #686EBF;
+  font-weight: 400;
+}
+
+/* Statistics Styling */
+
+.stat {
+  text-align: center;
+}
+
+/* section title styling */
+.section-title h2 {
+  text-align: center;
+}
+
+
+/* Marine Ecosystem Threats Section */
+
+.threats-section h4 {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.threats-section .category {
+  font-family: 'IBMPlexMono-Regular';
+  margin-top: 6px;
+  border: #686EBF solid 1px;
+  border-radius: 2px;
+  color: #686EBF;
+  width: fit-content;
+  padding: 0 2px 0 2px;
+  font-size: 0.8em;
+
+}
+
+.threats-section p {
+  margin-bottom: 0;
+}

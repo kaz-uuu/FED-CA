@@ -1,29 +1,17 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
-<html>
+<html lang="en">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
+        <title>About ME</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="style.css">
-        <link rel="stylesheet" href="gridstyle.css">
-        <link rel="stylesheet" href="textnavstyle.css">
+        <link rel="stylesheet" href="css/about-me.css">
+        <link rel="stylesheet" href="css/gridstyle.css">
+        <link rel="stylesheet" href="css/textnavstyle.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
-        <script type="importmap">
-            {
-              "imports": {
-                "three": "https://cdn.jsdelivr.net/npm/three@0.164.1/build/three.module.js",
-                "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.164.1/examples/jsm/"
-              }
-            }
-          </script>         
     </head>
     <body>
         <div class="navwrapper">
@@ -31,110 +19,82 @@
             <div class="navbar">
                 <nav>
                     <a href='/index.html' class="scrambletext" data-value="MARINE ECOSYSTEMS">MARINE ECOSYSTEMS</a>
-                    <a href='/about-me.html'class="scrambletext" data-value="ABOUT ME">ABOUT ME</a>
-                    <a class="scrambletext" data-value="ASPIRATIONS">ASPIRATIONS</a>
+                    <a href='/about-me.html' class="scrambletext" data-value="ABOUT ME">ABOUT ME</a>
+                    <a href='/aspirations.html' class="scrambletext" data-value="ASPIRATIONS">ASPIRATIONS</a>
                 </nav>
             </div>
         </div>
-        <div class="smooth-scroll-wrapper">
+        <section class="about">
             <div class="grid-container">
                 <div class="grid-item" id="top-padding">
                 </div>
-                <div class="grid-item">
-                    <section class="hero-section">
-                        <h1>About Me</h1>
-                        <h2>UN SGD 14.2</h2>
-                        <span class="top-left-corner"></span>
-                        <span class="top-right-corner"></span>
-                        <span class="bottom-left-corner"></span>
-                        <span class="bottom-right-corner"></span>
-                    </section>
-                </div>
-                <div id="coral-container" class="grid-item coral-scene">
-                    <canvas id="glCanvas" width="500px"></canvas>
+                <div class="grid-item title-item">
+                    <h1>ABOUT ME</h1>
                     <span class="top-left-corner"></span>
                     <span class="top-right-corner"></span>
                     <span class="bottom-left-corner"></span>
+                    <span class="bottom-right-corner"></span>
                 </div>
-            </div>
+                <div class="grid-item filler-item">
+                    <span class="top-left-corner"></span>
+                    <span class="top-right-corner"></span>
+                    <span class="bottom-left-corner"></span>
+                    <span class="bottom-right-corner"></span>
+                </div>
+                <div class="grid-item code-item">
+                    <div id="code-container"></div>
 
-            <div class="grid-container facts-section">
-                <div class="grid-item stat">
-                    <h4>Earth has over</h4>
-                    <h1>243,613</h1>
-                    <h4>known marine species as of 2023</h4>
                     <span class="top-left-corner"></span>
                     <span class="top-right-corner"></span>
                     <span class="bottom-left-corner"></span>
                     <span class="bottom-right-corner"></span>
                 </div>
-                <div class="grid-item stat">
-                    <h4>Around</h4>
-                    <h1>20%</h1>
-                    <h4>of the world's coral reefs have been destroyed</h4>
-                    <span class="top-left-corner"></span>
-                    <span class="top-right-corner"></span>
-                    <span class="bottom-left-corner"></span>
-                    <span class="bottom-right-corner"></span>
-                </div>
-                <div class="grid-item stat">
-                    <h4>Only</h4>
-                    <h1>7.65%</h1>
-                    <h4>of the world's oceans are covered by marine protected areas (MPAs)</h4>
-                    <span class="top-left-corner"></span>
+                <div class="grid-item content-item">
+                    <img src="assets/kazu.JPG" alt="Kazu Ho Jie An">
+                    <div class="text">
+                        <p>On June 29th, 2007, the first iPhone was released to the world. I was born four days after that. The iPhone is an icon representing a series of inventions that heralded a new age of interconnectivity that drastically changed our lifestyles. Growing up surrounded by ever-advancing technology, I developed a deep passion for its transformative power. At the age of 11, I took my first step into the world of programming by learning Swift, a language designed to create iPhone applications. As I built my first few apps, I embarked on a continuous learning journey that has brought me to where I am today.
+                        <br><br>
+                        With my passion, skills, and commitment, I want to contribute to communities in need, creating innovative solutions and pushing the boundaries of what is possible. The ever-evolving nature of technology excites me, and I am ready to embrace its challenges and opportunities.</p>
+                        <div class="socials">
+                            <a href="https://github.com/kaz-uuu">
+                                <img src="assets/icons8-github-50.png" alt="github">
+                            </a>
+                            <a href="https://www.instagram.com/k4zu.mp3/">
+                                <img src="assets/icons8-instagram-50.png" alt="instagram">
+                            </a>
+                            <a  href="https://kazu.digital">
+                                <img src="assets/icons8-link-50.png" alt="site-link">
+                            </a>
+                            <a href="mailto:kazu.24@ichat.sp.edu.sg">
+                                <img src="assets/icons8-email-50.png" alt="email">
+                            </a>
+                            </div>
+                    </div>
+                            <span class="top-left-corner"></span>
                     <span class="top-right-corner"></span>
                     <span class="bottom-left-corner"></span>
                     <span class="bottom-right-corner"></span>
                 </div>
                 
-            </div>
-            
-            <div class="grid-container">
-                <div class="grid-item section-title">
-                    <h2>Marine Ecosystem Threats</h2>
+                <div class="grid-item bottom-banner">
+                    <div class="marquee-container">
+                        <div class="marquee">
+                            <h1>&emsp;innovator.&emsp;creator.&emsp;designer.&emsp;leader.&emsp;innovator.&emsp;creator.&emsp;designer.&emsp;leader.&emsp;</h1>
+                        </div>
+                    </div>
+                    <span class="top-left-corner"></span>
+                    <span class="top-right-corner"></span>
+                
                 </div>
             </div>
-            
-            <div class="grid-container column-2">
-                <div class="grid-item">
-                    <h4>Overfishing and Destructive Fishing Practices</h4>
-                    <p>Overfishing and destructive fishing practices lead to the depletion of fish stocks, disrupts marine food webs, degrades marine habitats and contributes to the loss of biodiversity and ecosystem resilience. Examples of destructive fishing practices include using explosives to kill/stun fish, which can severe damage to natural habitats such as coral reefs.</p>
-                    <span class="top-left-corner"></span>
-                    <span class="top-right-corner"></span>
-                    <span class="bottom-left-corner"></span>
-                    <span class="bottom-right-corner"></span>
-                </div> 
-                <div class="grid-item">
-                    <h4>Overfishing and Destructive Fishing Practices</h4>
-                    <p>Overfishing and destructive fishing practices lead to the depletion of fish stocks, disrupts marine food webs, degrades marine habitats and contributes to the loss of biodiversity and ecosystem resilience. Examples of destructive fishing practices include using explosives to kill/stun fish, which can severe damage to natural habitats such as coral reefs.</p>
-                    <span class="top-left-corner"></span>
-                    <span class="top-right-corner"></span>
-                    <span class="bottom-left-corner"></span>
-                    <span class="bottom-right-corner"></span>
-                </div> 
-                <div class="grid-item">
-                    <h4>Overfishing and Destructive Fishing Practices</h4>
-                    <p>Overfishing and destructive fishing practices lead to the depletion of fish stocks, disrupts marine food webs, degrades marine habitats and contributes to the loss of biodiversity and ecosystem resilience. Examples of destructive fishing practices include using explosives to kill/stun fish, which can severe damage to natural habitats such as coral reefs.</p>
-                    <span class="top-left-corner"></span>
-                    <span class="top-right-corner"></span>
-                    <span class="bottom-left-corner"></span>
-                    <span class="bottom-right-corner"></span>
-                </div> 
-                <div class="grid-item">
-                    <h4>Overfishing and Destructive Fishing Practices</h4>
-                    <p>Overfishing and destructive fishing practices lead to the depletion of fish stocks, disrupts marine food webs, degrades marine habitats and contributes to the loss of biodiversity and ecosystem resilience. Examples of destructive fishing practices include using explosives to kill/stun fish, which can severe damage to natural habitats such as coral reefs.</p>
-                    <span class="top-left-corner"></span>
-                    <span class="top-right-corner"></span>
-                    <span class="bottom-left-corner"></span>
-                    <span class="bottom-right-corner"></span>
-                </div> 
-            </div>
+        </section>
+
             
             <!--[if lt IE 7]>
                 <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
             <![endif]-->
-        </div>
         <!-- <script src="smooth-scroll.js"></script> -->
-        <script src="scramble.js"></script>
+        <script src="javascript/scramble.js"></script>
+        <script src="javascript/code-animation.js"></script>
     </body>
 </html>

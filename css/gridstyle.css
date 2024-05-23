@@ -1,0 +1,109 @@
+/* Grid Styling */
+
+.grid-container {
+        max-width: 1400px;
+        display: grid;
+        /* repeat(repetition amount, track listing)  */ 
+        align-items: stretch;
+        margin: auto;
+        box-sizing: border-box;
+        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); 
+      }
+      
+    .column-2 {
+        grid-template-columns: repeat(auto-fit, minmax(500px, 1fr)) !important; 
+    }
+    
+    .grid-item {
+        position: relative;
+        padding: 1.5em;
+        border: 1px solid #D9D9D9;
+        margin-bottom: -1px;
+        margin-left: -1px;
+    }
+    
+    /* Pseudo Elements */
+    
+    /* Both Lines */
+    
+    .grid-item::before,
+    .grid-item::after {
+        content: "";
+        background-color: #D9D9D9;
+        position: absolute;
+        box-sizing:border-box;
+        width: 200vw;
+        height: 1px;
+        left: -100%;
+    
+    }
+    
+    /* Top Row Line */
+    
+    .grid-item::after {
+        top: -1px;
+    
+    }
+    
+    /* Bottom Row Line */
+    
+    .grid-item::before {
+        bottom:-1px;
+    
+    }
+    
+    
+    /* intersection */
+    /* create center element to apply pseudo elements */
+    .top-right-corner, .bottom-right-corner, .top-left-corner, .bottom-left-corner {
+        width: 1px;
+        height: 1px;
+        position: absolute;
+        
+    }
+    /* create vertical line of intersection */
+    .top-right-corner::before, .bottom-right-corner::before, .top-left-corner::before, .bottom-left-corner::before {
+        content: "";
+        position: absolute;
+        height: 11px;
+        width: 1px;
+        background-color: #595959;
+        z-index: 2;
+        top: -5px;
+    }
+    /* create horizontal line of intersection */
+    .top-right-corner::after, .bottom-right-corner::after, .top-left-corner::after, .bottom-left-corner::after {
+        content: "";
+        position: absolute;
+        height: 1px;
+        width: 11px;
+        background-color: #595959;
+        z-index: 2;
+        left: -5px;
+    }
+    /* position center element at the grid intersections */
+    .top-right-corner {
+        top: -1px;
+        right: -1px;
+    }
+     
+    .bottom-right-corner {
+        bottom: -1px;
+        right: -1px;
+    }
+    
+    .top-left-corner {
+        top: -1px;
+        left: -1px;
+    }
+    
+    .bottom-left-corner {
+        bottom: -1px;
+        left: -1px;
+    }
+    
+    .stat > .top-right-corner::before, .top-left-corner::before, .bottom-left-corner::before, .bottom-right-corner::before {
+        left: 0px;
+    }
+    
+    

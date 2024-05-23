@@ -1,0 +1,104 @@
+html {
+        width: 100%;
+      }
+      
+body {
+        margin: 0;
+        font-family: "DM Sans", sans-serif;
+        /* background-image: url('bluefedbackground.jpg'); */
+        background-size: cover;
+        width: 100%;
+        overflow-x: hidden;
+        background-color: #F2FAFF;
+}
+
+@font-face {
+        font-family: 'IBMPlexMono-Regular';
+        src: url('../fonts/IBMPlexMono-Regular.ttf');
+}
+
+
+/* About Me Section */
+
+.about-item > h1 {
+        font-weight: 800;
+}
+
+/* Code Animation */
+#code-container {
+        font-size: 0.6em;
+        font-family: "IBMPlexMono-Regular";
+        white-space: pre;
+        line-height: 1.5;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+}
+
+.code-item {
+        padding-top: 19px !important;
+        padding-bottom: 19px !important;
+}
+
+.filler-item {
+        background: repeating-linear-gradient(
+                45deg,
+                #606cbc00,
+                #16237700 10px,
+                #e9f1f7 10px,
+                #e9f1f7  20px
+        );
+}
+
+.content-item {
+        grid-column: span 3;
+        height: fit-content;
+        display: flex;
+        flex-direction: row;
+        gap: 68px;
+        padding: 58px 68px 58px 68px !important;
+}
+
+.content-item > img {
+        height: 500px;
+        border-radius: 4px;
+}
+
+.text p {
+        margin: 0;
+}
+
+.socials {
+        width: 100%;
+        display: flex;
+        margin: auto;
+        gap: 15px;
+        align-content: center;
+        margin-top: 20px;
+}
+
+.socials img {
+        height: 40px;
+}
+
+.bottom-banner {
+        grid-column: span 3;
+}
+
+.marquee-container {
+        width: 100%;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+    .marquee {
+        display: inline-block;
+        animation: marquee 13s linear infinite;
+    }
+    @keyframes marquee {
+        0% {
+            transform: translateX(0%);
+        }
+        100% {
+            transform: translateX(-50%);
+        }
+    }

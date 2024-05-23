@@ -1,0 +1,25 @@
+html {
+        width: 100%;
+      }
+      
+      body {
+          margin: 0;
+          font-family: "DM Sans", sans-serif;
+         /* background-image: url('bluefedbackground.jpg'); */
+          background-size: cover;
+          width: 100%;
+          overflow-x: hidden;
+          background-color: #F2FAFF;
+      }
+      
+      @font-face {
+        font-family: 'IBMPlexMono-Regular';
+        src: url('../fonts/IBMPlexMono-Regular.ttf');
+      }
+      
+      
+     /* Title */
+
+     .title-item {
+        grid-column: span 3;
+     }
