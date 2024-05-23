@@ -1,25 +1,41 @@
 html {
         width: 100%;
-      }
+}
       
-      body {
-          margin: 0;
-          font-family: "DM Sans", sans-serif;
-         /* background-image: url('bluefedbackground.jpg'); */
-          background-size: cover;
-          width: 100%;
-          overflow-x: hidden;
-          background-color: #F2FAFF;
-      }
-      
-      @font-face {
+body {
+        margin: 0;
+        font-family: "DM Sans", sans-serif;
+        /* background-image: url('bluefedbackground.jpg'); */
+        background-size: cover;
+        width: 100%;
+        overflow-x: hidden;
+        background-color: #F2FAFF;
+}
+
+@font-face {
         font-family: 'IBMPlexMono-Regular';
         src: url('../fonts/IBMPlexMono-Regular.ttf');
-      }
-      
-      
-     /* Title */
+}
 
-     .title-item {
-        grid-column: span 3;
-     }
+
+
+/* Title */
+
+.subtitle-item h4 {
+        font-weight: 500;
+        color: #686EBF;
+}
+
+.measure-item h4 {
+        margin-bottom: 0;
+}
+
+.tags {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+}
+
+.tags .category-tag {
+        margin-bottom: 0;
+}

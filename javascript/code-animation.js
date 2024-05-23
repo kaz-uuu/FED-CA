@@ -15,9 +15,9 @@ const codeLines = [
         "    design = ['UI/UX', 'InDesign', 'Illustrator', 'Photoshop']",
         "    videoEditing = ['Da Vinci Resolve']",
         "    ThreeD = ['Blender']",
-        "    Soft Skills: ['Leadership', 'Communication', 'Public Speaking']",
+        "    Soft Skills = ['Leadership', 'Communication', 'Public Speaking']",
         "",
-        "// born and raised in the USA !!!",
+        "# born and raised in the USA !!!",
         "",
     ];
         const codeContainer = document.getElementById("code-container");

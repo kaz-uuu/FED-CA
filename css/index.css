@@ -79,17 +79,6 @@ body {
   margin-bottom: 0px;
 }
 
-.threats-section .category {
-  font-family: 'IBMPlexMono-Regular';
-  margin-top: 6px;
-  border: #686EBF solid 1px;
-  border-radius: 2px;
-  color: #686EBF;
-  width: fit-content;
-  padding: 0 2px 0 2px;
-  font-size: 0.8em;
-
-}
 
 .threats-section p {
   margin-bottom: 0;

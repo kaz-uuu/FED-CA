@@ -18,7 +18,7 @@
     margin: 0;
     font-weight: 700;
     letter-spacing: 0.05em;
-    background: linear-gradient(
+    background: linear-gradient( 
       -45deg,
       #5755FE,
       #c46bee,
@@ -102,4 +102,17 @@ nav a {
 
 nav a:hover {
   color: #2733df;
+}
+
+/* Category Tag Styling */
+
+.category-tag {
+  font-family: 'IBMPlexMono-Regular';
+  margin-top: 6px;
+  border: #686EBF solid 1px;
+  border-radius: 2px;
+  color: #686EBF;
+  width: fit-content;
+  padding: 0 2px 0 2px;
+  font-size: 0.8em; 
 }
