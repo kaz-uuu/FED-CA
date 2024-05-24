@@ -21,14 +21,54 @@ body {
 
 /* Title */
 
+/* TEXT SHADOW HERE ↓↓↓↓↓↓↓↓↓↓↓↓↓ */
+/* TEXT SHADOW HERE ↓↓↓↓↓↓↓↓↓↓↓↓↓ */
+/* TEXT SHADOW HERE ↓↓↓↓↓↓↓↓↓↓↓↓↓ */
+/* TEXT SHADOW - 2/5 Graphic Effects */
+.title-item {
+        text-shadow: #5855fe00 -2px -2px;
+}
+/* TEXT SHADOW HERE ↑↑↑↑↑↑↑↑↑↑↑↑↑ */
+/* TEXT SHADOW HERE ↑↑↑↑↑↑↑↑↑↑↑↑↑ */
+/* TEXT SHADOW HERE ↑↑↑↑↑↑↑↑↑↑↑↑↑ */
+
+h4 {
+        margin-top: 16px;
+}
+
 .subtitle-item h4 {
         font-weight: 500;
         color: #686EBF;
 }
 
+
 .measure-item h4 {
         margin-bottom: 0;
+        color: #5755FE;
+        transition: color 0.5s;
 }
+
+.measure-item p {
+        transition: color 0.5s;
+}
+
+.measure-item {
+        transition: background-color 0.5s;
+}
+
+.measure-item:hover {
+        background-color: #5755FE;
+}
+
+.measure-item:hover h4, .measure-item:hover p {
+        color: aliceblue;
+}
+
+.measure-item:hover .category-tag {
+        color: rgb(212, 221, 228);
+        border-color: rgb(212, 221, 228);
+}
+
 
 .tags {
         display: flex;

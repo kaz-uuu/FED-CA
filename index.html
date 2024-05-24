@@ -12,6 +12,7 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+        <!-- Import modules for ThreeJS -->
         <script type="importmap">
             {
               "imports": {
@@ -22,9 +23,8 @@
           </script>         
     </head>
     <body>
-
+        <!-- Nav Bar -->
         <div class="navwrapper">
-
             <div class="navbar">
                 <nav>
                     <a href='/index.html' class="scrambletext" data-value="MARINE ECOSYSTEMS">MARINE ECOSYSTEMS</a>
@@ -34,12 +34,14 @@
             </div>
         </div>
 
+        <!-- Hero Section -->
         <section class="hero-section">
             <div class="grid-container">
                 <div class="grid-item" id="top-padding"></div>
                 <div class="grid-item">
                         <h1>Protecting & Restoring our Marine Ecosystems</h1>
                         <h2>UN SGD 14.2</h2>
+                        <!-- These spans for each corner of the grid item are a 1 by 1 pixel used to apply  ::before and ::after pseudo elements  to create the junction cross. Each grid container has these span elements in order to maintain consistency regardless of grid item layout-->
                         <span class="top-left-corner"></span>
                         <span class="top-right-corner"></span>
                         <span class="bottom-left-corner"></span>
@@ -54,6 +56,7 @@
             </div>
         </section>
 
+        <!-- Facts Section -->
         <section class="facts-section">
             <div class="grid-container">
                 <div class="grid-item stat">
@@ -86,12 +89,15 @@
             </div>
         </section>
 
+        <!-- Threats Section -->
         <section class="threats-section">
+            <!-- Seperate Grid Containers were used for the content and the section title to preserve responsiveness. A grid container loses its ability to automatically determine the number of columns when grid items have different SPAN values -->
             <div class="grid-container">
                 <div class="grid-item section-title">
                     <h2>Marine Ecosystem Threats</h2>
                 </div>
             </div>
+            <!-- Column 2 denotes a grid-container that is limited to 2 columns max. By default the grid containers I built have 3 columns max. -->
             <div class="grid-container column-2">
                 <div class="grid-item">
                     <h4>Overfishing</h4>
@@ -131,12 +137,108 @@
                 </div> 
             </div>
         </section>
-            
-            <!--[if lt IE 7]>
-                <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
-                <![endif]-->
+
+        <!-- Measures Section -->
+        <section class="measures-section">
+            <div class="grid-container">
+                <div class="grid-item section-title">
+                    <h2>Possible Measures</h2>
+                </div>
+            </div>
+            <div class="grid-container">
+                <div class="grid-item">
+                    <h4>Reducing Pollution Inputs</h4>
+                    <p class="category-tag">PREVENTATIVE</p>
+                    <p>Implementing measures to reduce the discharge of pollutants into the ocean, such as stricter regulations on industrial waste disposal, improved sewage treatment systems, and better management of agricultural runoff.</p>
+                    <span class="top-left-corner"></span>
+                    <span class="top-right-corner"></span>
+                    <span class="bottom-left-corner"></span>
+                    <span class="bottom-right-corner"></span>
+                </div> 
+                <div class="grid-item">
+                    <h4>Promoting Sustainable Practices</h4>
+                    <p class="category-tag">PREVENTATIVE</p>
+                    <p>Promote sustainable practices by encouraging sustainable fishing practices, reducing plastic use and promoting recycling, and adopting renewable energy sources to mitigate climate change impacts on the ocean.</p>
+                    <span class="top-left-corner"></span>
+                    <span class="top-right-corner"></span>
+                    <span class="bottom-left-corner"></span>
+                    <span class="bottom-right-corner"></span>
+                </div> 
+                <div class="grid-item">
+                    <h4>Enhancing Environmental Education</h4>
+                    <p class="category-tag">PREVENTATIVE</p>
+                    <p>Enhancing environmental education includes increasing public awareness about the importance of ocean conservation and providing education on how individuals can reduce their environmental footprint.</p>
+                    <span class="top-left-corner"></span>
+                    <span class="top-right-corner"></span>
+                    <span class="bottom-left-corner"></span>
+                    <span class="bottom-right-corner"></span>
+                </div> 
+                <div class="grid-item">
+                    <h4>Cleanup Efforts</h4>
+                    <p class="category-tag">REMEDIAL</p>
+                    <p>Implementing cleanup initiatives to remove marine debris, such as beach cleanups, ocean cleanup projects, and the development of innovative technologies for waste removal from the ocean.</p>
+                    <span class="top-left-corner"></span>
+                    <span class="top-right-corner"></span>
+                    <span class="bottom-left-corner"></span>
+                    <span class="bottom-right-corner"></span>
+                </div> 
+                <div class="grid-item">
+                    <h4>Restoration Projects</h4>
+                    <p class="category-tag">REMEDIAL</p>
+                    <p>Investing in restoration efforts to rehabilitate degraded marine habitats, such as coral reef restoration, mangrove reforestation, and the creation of marine protected areas.</p>
+                    <span class="top-left-corner"></span>
+                    <span class="top-right-corner"></span>
+                    <span class="bottom-left-corner"></span>
+                    <span class="bottom-right-corner"></span>
+                </div> 
+                <div class="grid-item">
+                    <h4>International Collaboration</h4>
+                    <p class="category-tag">REMEDIAL</p>
+                    <p>Fostering international cooperation and agreements to address transboundary pollution issues and promote sustainable management of marine resources.</p>
+                    <span class="top-left-corner"></span>
+                    <span class="top-right-corner"></span>
+                    <span class="bottom-left-corner"></span>
+                    <span class="bottom-right-corner"></span>
+                </div> 
+            </div>
+        </section>
+
+        <!-- Real World Examples Section -->
+        <section class="realworld-section">
+            <div class="grid-container">
+                <div class="grid-item section-title">
+                    <h2>Real World Examples</h2>
+                </div>
+            </div>
+            <div class="grid-container">
+                <div class="grid-item realworld-content">
+                    <div class="img-wrapper">
+                        <a href="https://www.worldwildlife.org/stories/saving-belize-s-magnificent-and-endangered-barrier-reef" target="_blank">
+                            <img src="https://firebasestorage.googleapis.com/v0/b/fed-ca1-92e58.appspot.com/o/belizearticle.png?alt=media&token=6c5edd7e-a0be-494b-a9b2-f948b811901b">
+                         </a>
+                    </div>
+                    <div class="img-wrapper">
+                        <a href="https://www.unep.org/news-and-stories/story/mangrove-restoration-gives-hope-indonesias-sinking-shores" target="_blank">
+                            <img src="https://firebasestorage.googleapis.com/v0/b/fed-ca1-92e58.appspot.com/o/mangrovearticle.png?alt=media&token=39d8bb5d-1263-46ff-8a9b-b45025d963a4">
+                            </a>
+                    </div>
+                    <div class="img-wrapper">
+                        <a href="https://www.fiskeridir.no/English/Fisheries/Norwegian-Fisheries-Management/Ecosystem-based-fisheries-management-in-Norway" target="_blank">
+                            <img src="https://firebasestorage.googleapis.com/v0/b/fed-ca1-92e58.appspot.com/o/norwayarticle.png?alt=media&token=26f405cd-89a7-4f73-ac0e-8eb11a618e0e">
+                            </a>
+                    </div>
+                    <div class="img-wrapper">
+                        <a href="https://www.unep.org/news-and-stories/story/seychelles-innovative-approach-marine-protection" target="_blank">
+                            <img src="https://firebasestorage.googleapis.com/v0/b/fed-ca1-92e58.appspot.com/o/seychellesarticle.png?alt=media&token=aa7db47d-3133-4f83-a063-6915a2524a34">
+                            </a>
+                    </div>
+                </div>
+            </div>
+        </section>
             <!-- <script src="smooth-scroll.js"></script> -->
+            <!-- Navbar text scramble effect script -->
             <script src="javascript/scramble.js"></script>
+            <!-- ThreeJS script -->
               <script src="javascript/coral-scene.js" type="module"></script>
         </body>
         </html>

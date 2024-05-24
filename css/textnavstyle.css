@@ -18,6 +18,7 @@
     margin: 0;
     font-weight: 700;
     letter-spacing: 0.05em;
+    /* LINEAR GRADIENT !!!! - 3/5 Graphic Effects*/
     background: linear-gradient( 
       -45deg,
       #5755FE,
@@ -77,9 +78,11 @@
   width: 100%;
   margin: auto;
   margin-top: 13px;
+  /*  BORDER TO AN ELEMENT !!!! - 4/5 Graphic Effects*/
   border: #D9D9D9 1px solid;
   border-radius: 5px;
   background: rgba( 240, 249, 255, 0.35 );
+  /* CSS FILTER !!!! - 5/5 Graphic Effects*/
   backdrop-filter: blur( 4px );
   -webkit-backdrop-filter: blur( 4px );
 }

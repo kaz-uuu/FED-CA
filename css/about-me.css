@@ -77,6 +77,16 @@ body {
         margin-top: 25px;
 }
 
+
+/* 2D TRANSFORMATION !!!!  1/5 Graphic Effects*/
+.socials a {
+        transition: scale 0.4s;
+}
+
+.socials a:hover {
+        scale: 1.1;
+}
+
 .socials img {
         height: 40px;
 }

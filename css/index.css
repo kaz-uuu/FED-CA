@@ -74,12 +74,40 @@ body {
 
 /* Marine Ecosystem Threats Section */
 
-.threats-section h4 {
+.threats-section h4, .measures-section h4{ 
   margin-top: 0px;
   margin-bottom: 0px;
 }
 
 
-.threats-section p {
+.threats-section p, .measures-section p {
   margin-bottom: 0;
+}
+
+/* Real World Exmaples Section*/
+
+.realworld-content {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  padding-top: 40px;
+}
+
+.realworld-content img {
+  width: 500px;  
+  border-radius: 5px;
+}
+
+.img-wrapper {
+  padding: 4px;
+  border-radius: 7px;
+  border: #686EBF 2px solid;
+  height: 278.46px;
+  transition: scale 0.5s;
+}
+
+.img-wrapper:hover {
+  scale: 1.01;
 }
