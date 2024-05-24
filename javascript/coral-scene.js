@@ -46,7 +46,7 @@ controls.enableZoom = false;
 controls.enableDamping = true;
 controls.dampingFactor = 0.1;
 controls.autoRotate = true; 
-controls.autoRotateSpeed = 1.0; 
+controls.autoRotateSpeed = 1.5; 
 
 // lock the y-axis rotation
 controls.maxPolarAngle = Math.PI / 2.5; // 90 degrees
